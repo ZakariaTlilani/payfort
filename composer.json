@@ -1,9 +1,9 @@
 {
-    "name": "devinweb/payment",
+    "name": "ZakariaTlilani/PayFort",
     "description": "",
     "keywords": [
-        "devinweb",
-        "payment"
+        "ZakariaTlilani",
+        "PayFort"
     ],
     "homepage": "https://github.com/ZakariaTlilani/PayFort",
     "license": "MIT",
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Devinweb\\Payment\\": "src"
+            "ZakariaTlilani\\PayFort\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Devinweb\\Payment\\Tests\\": "tests"
+            "ZakariaTlilani\\PayFort\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +44,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Devinweb\\Payment\\PaymentServiceProvider"
+                "ZakariaTlilani\\PayFort\\PaymentServiceProvider"
             ],
             "aliases": {
-                "Payment": "Devinweb\\Payment\\Facades\\Payment"
+                "Payment": "ZakariaTlilani\\PayFort\\Facades\\Payment"
             }
         }
     }

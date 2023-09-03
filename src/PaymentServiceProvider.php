@@ -25,34 +25,9 @@ class PaymentServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/payments.php' => config_path('payments.php'),
+                __DIR__ . '/../config/Payfort.php' => config_path('Payfort.php'),
             ], 'config');
 
-            // if (!class_exists('CreatePaymentTransactionsTable')) {
-            //     $this->publishes([
-            //         __DIR__ . '/../database/migrations/create_payment_transactions_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_payment_transactions_table.php'),
-            //     ], 'migrations');;
-            // }
-
-
-
-            // Publishing the views.
-            /*$this->publishes([
-                __DIR__.'/../resources/views' => resource_path('views/vendor/payment'),
-            ], 'views');*/
-
-            // Publishing assets.
-            /*$this->publishes([
-                __DIR__.'/../resources/assets' => public_path('vendor/payment'),
-            ], 'assets');*/
-
-            // Publishing the translation files.
-            /*$this->publishes([
-                __DIR__.'/../resources/lang' => resource_path('lang/vendor/payment'),
-            ], 'lang');*/
-
-            // Registering package commands.
-            // $this->commands([]);
         }
     }
 
