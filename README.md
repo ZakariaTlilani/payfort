@@ -54,22 +54,22 @@ Before start using Payfort as a payment gateway, you will add the credentiels to
          */
 
         'language'           => env('LANGUAGE', 'en'),    // used currency ex: english
-        'currency'           => env('CURRENCY', 'SAR'),   // used currency ex: saudi arabian riyal
+        'currency'           => env('CURRENCY', 'SAR')    // used currency ex: saudi arabian riyal
     ]
 
 
   'payfort_apple_pay' => [
 
-        'sandboxMode'           => true,
-        'merchantIdentifier'    => '',
-        'accessCode'            => '',
-        'SHARequestPhrase'      => '',
-        'SHAResponsePhrase'     => '',
-        'SHAType'               => 'sha256',
-        'command'               => 'PURCHASE',
+        'sandboxMode'        => env('PAYFORT_SAND_BOX_MODE', true),
+        'merchantIdentifier' => env('MERCHANT_IDENTIFIER', ''),
+        'accessCode'         => env('ACCESS_CODE', ''),
+        'SHARequestPhrase'   => env('SHA_REQUEST_PASSPHRASE', ''),
+        'SHAResponsePhrase'  => env('SHA_RESPONSE_PASSPHRASE', ''),
+        'SHAType'            => env('SHA_TYPE', 'sha256'),
+        'command'            => env('COMMAND', 'PURCHASE'),
 
-        'language'              => 'ar',
-        'currency'              => 'SAR',
+        'language'           => env('LANGUAGE', 'en'),
+        'currency'           => env('CURRENCY', 'SAR')
   ]
 ```
 Note : dont forget to create route to submit data to the backend.
