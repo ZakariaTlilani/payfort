@@ -38,11 +38,11 @@ class PaymentServiceProvider extends ServiceProvider
     {
 
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__ . '/../config/payments.php', 'payments');
+        $this->mergeConfigFrom(__DIR__ . '/../config/Payfort.php', 'payments');
 
         // Register the main class to use with the facade
         $this->app->singleton('payment', function ($app) {
-            return new Payment($app);
+            return new Payfort($app);
         });
     }
 }
