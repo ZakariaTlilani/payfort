@@ -1,54 +1,54 @@
 {
-    "name": "ZakariaTlilani/PayFort",
-    "description": "",
-    "keywords": [
-        "ZakariaTlilani",
-        "PayFort"
-    ],
-    "homepage": "https://github.com/ZakariaTlilani/PayFort",
-    "license": "MIT",
-    "type": "library",
-    "authors": [
-        {
-            "name": "Zakaria Tlilani",
-            "email": "zakaria@youmats.com",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "php": ">=7.4",
-        "guzzlehttp/guzzle": ">=7.1"
-    },
-    "require-dev": {
-        "orchestra/testbench": "^4.0",
-        "phpunit/phpunit": "^8.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "ZakariaTlilani\\PayFort\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "ZakariaTlilani\\PayFort\\Tests\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-f": "vendor/bin/phpunit --filter",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "ZakariaTlilani\\PayFort\\PaymentServiceProvider"
-            ],
-            "aliases": {
-                "Payment": "ZakariaTlilani\\PayFort\\Facades\\Payment"
-            }
-        }
+  "name": "zakariatlilani/payfort",
+  "description": "",
+  "keywords": [
+    "zakariatlilani",
+    "payfort"
+  ],
+  "homepage": "https://github.com/zakariatlilani/payfort",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Zakaria Tlilani",
+      "email": "zakaria@youmats.com",
+      "role": "Developer"
     }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "guzzlehttp/guzzle": ">=7.1"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^4.0",
+    "phpunit/phpunit": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "zakariatlilani\\payfort\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "zakariatlilani\\payfort\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-f": "vendor/bin/phpunit --filter",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "zakariatlilani\\payfort\\PaymentServiceProvider"
+      ],
+      "aliases": {
+        "Payment": "zakariatlilani\\payfort\\Facades\\Payment"
+      }
+    }
+  }
 }

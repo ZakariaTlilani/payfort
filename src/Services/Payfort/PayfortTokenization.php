@@ -1,12 +1,12 @@
 <?php
 
-namespace ZakariaTlilani\PayFort\Services\Payfort;
+namespace zakariatlilani\payfort\Services\Payfort;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Cache;
 use InvalidArgumentException;
-use ZakariaTlilani\PayFort\Traits\Payfort\PayfortServices;
+use zakariatlilani\payfort\Traits\Payfort\PayfortServices;
 
 class PayfortTokenization
 {

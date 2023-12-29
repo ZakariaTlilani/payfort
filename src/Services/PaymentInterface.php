@@ -1,6 +1,6 @@
 <?php
 
-namespace ZakariaTlilani\PayFort\Services;
+namespace zakariatlilani\payfort\Services;
 
 
 interface PaymentInterface

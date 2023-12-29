@@ -1,9 +1,9 @@
 <?php
 
-namespace ZakariaTlilani\PayFort\Services\Payfort;
+namespace zakariatlilani\payfort\Services\Payfort;
 
-use ZakariaTlilani\PayFort\Services\AbstractProvider;
-use ZakariaTlilani\PayFort\Services\ProviderInterface;
+use zakariatlilani\payfort\Services\AbstractProvider;
+use zakariatlilani\payfort\Services\ProviderInterface;
 
 class PayfortApplePayProvider extends AbstractProvider implements ProviderInterface
 {

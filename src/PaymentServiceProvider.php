@@ -1,6 +1,6 @@
 <?php
 
-namespace ZakariaTlilani\PayFort;
+namespace zakariatlilani\payfort;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 

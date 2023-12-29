@@ -1,10 +1,10 @@
 <?php
 
-namespace ZakariaTlilani\PayFort\Http\Controllers\Payment;
+namespace zakariatlilani\payfort\Http\Controllers\Payment;
 
 use Illuminate\Http\Request;
-use ZakariaTlilani\PayFort\Facades\Payment;
-use ZakariaTlilani\PayFort\Http\Controllers\Controller;
+use zakariatlilani\payfort\Facades\Payment;
+use zakariatlilani\payfort\Http\Controllers\Controller;
 
 class TransactionController extends Controller
 {

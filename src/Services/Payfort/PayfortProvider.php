@@ -1,20 +1,20 @@
 <?php
 
-namespace ZakariaTlilani\PayFort\Services\Payfort;
+namespace zakariatlilani\payfort\Services\Payfort;
 
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Validation\ValidationException;
 use Illuminate\Support\Arr;
 use InvalidArgumentException;
-use ZakariaTlilani\PayFort\Services\Payfort\PayfortProcessResponse;
-use ZakariaTlilani\PayFort\Services\Payfort\PayfortTokenization;
-use ZakariaTlilani\PayFort\Services\Payfort\PayfortResponseRequest;
-use ZakariaTlilani\PayFort\Traits\Payfort\PayfortServices;
-use ZakariaTlilani\PayFort\Services\AbstractProvider;
-use ZakariaTlilani\PayFort\Services\ProviderInterface;
-use ZakariaTlilani\PayFort\Events\FailedTransaction;
-use ZakariaTlilani\PayFort\Events\SuccessTransaction;
+use zakariatlilani\payfort\Services\Payfort\PayfortProcessResponse;
+use zakariatlilani\payfort\Services\Payfort\PayfortTokenization;
+use zakariatlilani\payfort\Services\Payfort\PayfortResponseRequest;
+use zakariatlilani\payfort\Traits\Payfort\PayfortServices;
+use zakariatlilani\payfort\Services\AbstractProvider;
+use zakariatlilani\payfort\Services\ProviderInterface;
+use zakariatlilani\payfort\Events\FailedTransaction;
+use zakariatlilani\payfort\Events\SuccessTransaction;
 
 class PayfortProvider  extends AbstractProvider implements ProviderInterface
 {

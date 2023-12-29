@@ -9,13 +9,13 @@ This package provide an easy payment system using **Amazon Payfort** in Middle E
 1.  You can install the package via composer:
 
 ```bash
-composer require ZakariaTlilani/PayFort
+composer require zakariatlilani/payfort
 ```
 
 2. Run the command below to publish the package config file `config/payfort.php`:
 
 ```bash
-php artisan vendor:publish --provider="ZakariaTlilani\PayFort\PaymentServiceProvider" --tag="config"
+php artisan vendor:publish --provider="zakariatlilani\payfort\PaymentServiceProvider" --tag="config"
 ```
 
 ## Configuration
@@ -48,7 +48,7 @@ Before start using Payfort as a payment gateway, you will add the credentiels to
         'SHAResponsePhrase'  => env('SHA_RESPONSE_PASSPHRASE', ''),
         'SHAType'            => env('SHA_TYPE', 'sha256'),
         'command'            => env('COMMAND', 'AUTHORIZATION'),
-        
+
         /**
          *  General usage settings
          */
@@ -72,8 +72,8 @@ Before start using Payfort as a payment gateway, you will add the credentiels to
         'currency'           => env('CURRENCY', 'SAR')
   ]
 ```
-Note : dont forget to create route to submit data to the backend.
 
+Note : dont forget to create route to submit data to the backend.
 
 ## Usage
 
@@ -92,8 +92,9 @@ Each request should contains `amount`, `email`, `hold_name`
   ])
 
 ```
+
 # Payfort Usage Example
- 
+
 ```php
 
 <?php
@@ -135,10 +136,10 @@ As we know payfort can notify the merchant, for all events you subscribed for on
 
 This webHook can invoks two events build in. There are two events available for you to listen for.
 
-| Event                                        | Fired                                          | Parameter                                   |
-| -------------------------------------------- | ---------------------------------------------- | ------------------------------------------- |
-| `ZakariaTlilani\PayFort\Events\SuccessTransaction` | when payfort response with the successful data | array [success response](#success-response) |
-| `ZakariaTlilani\PayFort\Events\FailTransaction`    | when payfort response with the Fail data       | array [fail_response](#fail-response)       |
+| Event                                              | Fired                                          | Parameter                                   |
+| -------------------------------------------------- | ---------------------------------------------- | ------------------------------------------- |
+| `zakariatlilani\payfort\Events\SuccessTransaction` | when payfort response with the successful data | array [success response](#success-response) |
+| `zakariatlilani\payfort\Events\FailTransaction`    | when payfort response with the Fail data       | array [fail_response](#fail-response)       |
 
 ### Success response
 
@@ -183,29 +184,28 @@ This webHook can invoks two events build in. There are two events available for 
 ]
 ```
 
-
 # Pay With ReactNative
 
 if you want to process the payment via webView in your react native mobile app
 
 ```js
 function onNavigationStateChange() {
-    // this method will be invoked each time the url changed
+  // this method will be invoked each time the url changed
 }
 
 function onMessage() {
-    // here you can handle the final result
+  // here you can handle the final result
 }
 
 return (
-    <WebView
-        source={{ html: html() }}
-        onNavigationStateChange={onNavigationStateChange}
-        javaScriptEnabled={true}
-        domStorageEnabled={true}
-        onMessage={onMessage}
-        startInLoadingState
-    />
+  <WebView
+    source={{ html: html() }}
+    onNavigationStateChange={onNavigationStateChange}
+    javaScriptEnabled={true}
+    domStorageEnabled={true}
+    onMessage={onMessage}
+    startInLoadingState
+  />
 );
 ```
 

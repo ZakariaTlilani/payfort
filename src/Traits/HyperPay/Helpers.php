@@ -1,6 +1,6 @@
 <?php
 
-namespace ZakariaTlilani\PayFort\Traits\HyperPay;
+namespace zakariatlilani\payfort\Traits\HyperPay;
 
 use Illuminate\Support\Arr;
 

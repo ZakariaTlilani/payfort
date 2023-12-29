@@ -1,6 +1,6 @@
 <?php
 
-namespace ZakariaTlilani\PayFort\Http\Controllers;
+namespace zakariatlilani\payfort\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZakariaTlilani\PayFort\Events;
+namespace zakariatlilani\payfort\Events;
 
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PrivateChannel;

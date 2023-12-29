@@ -1,13 +1,13 @@
 <?php
 
-namespace ZakariaTlilani\PayFort\Services\Payfort;
+namespace zakariatlilani\payfort\Services\Payfort;
 
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Log;
-use ZakariaTlilani\PayFort\Services\Payfort\AbstractPayfort;
-use ZakariaTlilani\PayFort\Traits\Payfort\PayfortServices;
-use ZakariaTlilani\PayFort\Traits\Payfort\PayfortApi;
+use zakariatlilani\payfort\Services\Payfort\AbstractPayfort;
+use zakariatlilani\payfort\Traits\Payfort\PayfortServices;
+use zakariatlilani\payfort\Traits\Payfort\PayfortApi;
 
 class PayfortResponseRequest extends AbstractPayfort
 {

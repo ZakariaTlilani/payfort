@@ -1,11 +1,11 @@
 <?php
 
-namespace ZakariaTlilani\PayFort\Facades;
+namespace zakariatlilani\payfort\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \ZakariaTlilani\PayFort\Skeleton\SkeletonClass
+ * @see \zakariatlilani\payfort\Skeleton\SkeletonClass
  */
 class Payment extends Facade
 {

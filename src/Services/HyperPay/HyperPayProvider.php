@@ -1,14 +1,14 @@
 <?php
 
-namespace ZakariaTlilani\PayFort\Services\HyperPay;
+namespace zakariatlilani\payfort\Services\HyperPay;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Log;
-use ZakariaTlilani\PayFort\Services\AbstractProvider;
-use ZakariaTlilani\PayFort\Services\ProviderInterface;
-use ZakariaTlilani\PayFort\Traits\HyperPay\CreditCardBrand;
-use ZakariaTlilani\PayFort\Traits\HyperPay\Helpers;
-use ZakariaTlilani\PayFort\Traits\HyperPay\interfaceCreditCard;
+use zakariatlilani\payfort\Services\AbstractProvider;
+use zakariatlilani\payfort\Services\ProviderInterface;
+use zakariatlilani\payfort\Traits\HyperPay\CreditCardBrand;
+use zakariatlilani\payfort\Traits\HyperPay\Helpers;
+use zakariatlilani\payfort\Traits\HyperPay\interfaceCreditCard;
 use GuzzleHttp\Client;
 
 

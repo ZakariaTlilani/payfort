@@ -1,13 +1,13 @@
 <?php
 
-namespace ZakariaTlilani\PayFort;
+namespace zakariatlilani\payfort;
 
 use Illuminate\Support\Manager;
 use InvalidArgumentException;
-use ZakariaTlilani\PayFort\Services\HyperPay\HyperPayProvider;
-use ZakariaTlilani\PayFort\Services\Payfort\PayfortProvider;
-use ZakariaTlilani\PayFort\Services\Payfort\PayfortApplePayProvider;
-use ZakariaTlilani\PayFort\Services\PaymentInterface;
+use zakariatlilani\payfort\Services\HyperPay\HyperPayProvider;
+use zakariatlilani\payfort\Services\Payfort\PayfortProvider;
+use zakariatlilani\payfort\Services\Payfort\PayfortApplePayProvider;
+use zakariatlilani\payfort\Services\PaymentInterface;
 
 class Payfort extends Manager implements PaymentInterface
 {
@@ -33,7 +33,7 @@ class Payfort extends Manager implements PaymentInterface
     /**
      * Create an instance of the specified driver.
      *
-     * @return \ZakariaTlilani\PayFort\Services\AbstractProvider
+     * @return \zakariatlilani\payfort\Services\AbstractProvider
      */
     protected function createPayfortDriver()
     {
@@ -48,7 +48,7 @@ class Payfort extends Manager implements PaymentInterface
     /**
      * Create an instance of the specified driver.
      *
-     * @return \ZakariaTlilani\PayFort\Services\AbstractProvider
+     * @return \zakariatlilani\payfort\Services\AbstractProvider
      */
     protected function createPayfortApplePayDriver()
     {
@@ -64,7 +64,7 @@ class Payfort extends Manager implements PaymentInterface
     /**
      * Create an instance of the specified driver.
      *
-     * @return \ZakariaTlilani\PayFort\Services\AbstractProvider
+     * @return \zakariatlilani\payfort\Services\AbstractProvider
      */
     protected function createHyperPayDriver()
     {
@@ -82,7 +82,7 @@ class Payfort extends Manager implements PaymentInterface
      *
      * @param  string  $provider
      * @param  array  $config
-     * @return \ZakariaTlilani\PayFort\Services\AbstractProvider
+     * @return \zakariatlilani\payfort\Services\AbstractProvider
      */
     public function buildProvider($provider, $config, $merchant_reference)
     {

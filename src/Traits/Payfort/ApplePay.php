@@ -1,6 +1,6 @@
 <?php
 
-namespace ZakariaTlilani\PayFort\Traits\Payfort;
+namespace zakariatlilani\payfort\Traits\Payfort;
 
 use Illuminate\Support\Arr;
 

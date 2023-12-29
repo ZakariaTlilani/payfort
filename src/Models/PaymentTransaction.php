@@ -1,6 +1,6 @@
 <?php
 
-namespace ZakariaTlilani\PayFort\Models;
+namespace zakariatlilani\payfort\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

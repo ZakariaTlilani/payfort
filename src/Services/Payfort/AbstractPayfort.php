@@ -1,6 +1,6 @@
 <?php
 
-namespace ZakariaTlilani\PayFort\Services\Payfort;
+namespace zakariatlilani\payfort\Services\Payfort;
 
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Http\Request;

@@ -2,7 +2,7 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use ZakariaTlilani\PayFort\Tests\TestUser;
+use zakariatlilani\payfort\Tests\TestUser;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 

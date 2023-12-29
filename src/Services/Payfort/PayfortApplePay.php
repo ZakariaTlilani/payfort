@@ -1,11 +1,11 @@
 <?php
 
-namespace ZakariaTlilani\PayFort\Services\Payfort;
+namespace zakariatlilani\payfort\Services\Payfort;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
-use ZakariaTlilani\PayFort\Traits\Payfort\ApplePay;
-use ZakariaTlilani\PayFort\Traits\Payfort\PayfortApi;
+use zakariatlilani\payfort\Traits\Payfort\ApplePay;
+use zakariatlilani\payfort\Traits\Payfort\PayfortApi;
 
 class PayfortApplePay
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZakariaTlilani\PayFort\Http\Requests;
+namespace zakariatlilani\payfort\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 // use LVR\CreditCard\CardCvc;
