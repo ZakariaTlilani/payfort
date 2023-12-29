@@ -16,12 +16,12 @@
     }
   ],
   "require": {
-    "php": ">=7.4",
+    "php": ">=8.0.2",
     "guzzlehttp/guzzle": ">=7.1"
   },
   "require-dev": {
-    "orchestra/testbench": "^4.0",
-    "phpunit/phpunit": "^8.0"
+    "orchestra/testbench": "^7.0.0",
+    "phpunit/phpunit": "^9.5.10"
   },
   "autoload": {
     "psr-4": {
