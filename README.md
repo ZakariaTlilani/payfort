@@ -2,7 +2,7 @@
 
 This package provide an easy payment system using **Amazon Payfort** in Middle East and North Africa.
 
-**Note:** This package requires a minimum Laravel 5.5
+**Note:** This package requires a minimum Laravel 5.5 and supports up to laravel 10
 
 ## Installation
 
@@ -20,7 +20,7 @@ php artisan vendor:publish --provider="zakariatlilani\payfort\PaymentServiceProv
 
 ## Configuration
 
-Before start using Payfort as a payment gateway, you will add the credentiels to `app/config/payfort.php` ( preferbly use .env vars rather then hard coding it) as seen bellow.
+Before start using Payfort as a payment gateway, you will add the credentiels to `app/payfort.php` ( preferbly use .env vars rather then hard coding it) as seen bellow.
 
 ```php
 
