@@ -37,7 +37,9 @@ class Payfort extends Manager implements PaymentInterface
      */
     protected function createPayfortDriver()
     {
-        $config = $this->app('config')['payments.payfort'];
+
+        $config = config('payments.payfort');
+
         return $this->buildProvider(
             PayfortProvider::class,
             $config,
@@ -52,7 +54,7 @@ class Payfort extends Manager implements PaymentInterface
      */
     protected function createPayfortApplePayDriver()
     {
-        $config = $this->app('config')['payments.payfort_apple_pay'];
+        $config = config('payments.payfort_apple_pay');
 
         return $this->buildProvider(
             PayfortApplePayProvider::class,
@@ -68,7 +70,7 @@ class Payfort extends Manager implements PaymentInterface
      */
     protected function createHyperPayDriver()
     {
-        $config = $this->app('config')['payments.hyperPay'];
+        $config = config('payments.hyperPay');
 
         return $this->buildProvider(
             HyperPayProvider::class,
@@ -87,7 +89,7 @@ class Payfort extends Manager implements PaymentInterface
     public function buildProvider($provider, $config, $merchant_reference)
     {
         return new $provider(
-            $this->app('request'),
+            request(),
             $config,
             $merchant_reference
         );

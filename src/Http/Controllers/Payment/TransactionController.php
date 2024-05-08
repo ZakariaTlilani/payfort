@@ -14,8 +14,6 @@ class TransactionController extends Controller
         //
     }
 
-
-
     /**
      * After TOKINIZATION payfort return to this endpoint with an response
      *
@@ -25,7 +23,7 @@ class TransactionController extends Controller
      */
     public function paymentResponse(Request $request, $provider)
     {
-        return Payfort::use($provider)->responseCallback();
+        return Payment::use($provider)->responseCallback();
     }
 
     /**
@@ -37,7 +35,7 @@ class TransactionController extends Controller
      */
     public function processPaymentPresponse(Request $request, $provider)
     {
-        return Payfort::use($provider)->processResponseCallback();
+        return Payment::use($provider)->processResponseCallback();
     }
 
 
@@ -50,6 +48,6 @@ class TransactionController extends Controller
      */
     public function webHookNotify(Request $request, $provider)
     {
-        return Payfort::use($provider)->webHook();
+        return Payment::use($provider)->webHook();
     }
 }
